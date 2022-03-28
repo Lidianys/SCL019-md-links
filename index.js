@@ -4,6 +4,7 @@
 
 const readline = require('readline');
 const app = require('./app.js');
+let array = [];
 
 let interfazCapture = readline.createInterface({
     input: process.stdin,
@@ -27,30 +28,23 @@ interfazCapture.question('Ingrese la ruta:', function(resp){
             console.log('contiene un docuemnto .md');
         }
         else{
-            console.log('no contiene .md');
+            console.log('No es un .md');
         }  
       }
     else{
         console.log('No es un archivo');
+        throw new TypeError();
+
     }
     return resp;
  }).then((resp) => {
-     
- })
-    });
-    // if (app.verifyAcces(resp) === true) {
-    //     if (!app.pathAbsolute(resp)) {
-    //         console.log('la ruta es relativa, por lo que debo transformarla a absoluta');
-    //         resp = app.converToAbsolute(resp);
-    //         console.log('Ahora la ruta es absoluta', resp);
-                
-    //     }
-    //         if (app.pathExtension(resp)) {
-    //             console.log('contiene un docuemnto .md');
-    //         }
-    //         else{
-    //             console.log('no contiene .md');
-    //         }  
-    // }
+    //  app.readLines(resp);
+    array = app.readLines(resp);
     
+    console.log("lectura de lineas", array );
+    return(array);
+ })
+
+    });
+   
 // interfazCapture.close()
