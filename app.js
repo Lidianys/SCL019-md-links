@@ -5,7 +5,6 @@ let { readFile, access } = require('fs/promises');
 const readline = require('readline');
 const http = require('http');
 const { resolve } = require('dns');
-// const { url } = require('inspector');
 const { urlencoded } = require('express');
 const  url  = require('url');
 
@@ -36,15 +35,15 @@ function verifyAcces(resp) {
 //leer las lineas
 function readLines(resp) {
 
-  console.log('entrando a redlines', resp);
+  // console.log('entrando a redlines', resp);
 
   return readFile(resp, 'utf8').then((resultado) => {
-    console.log(resultado);
+    // console.log(resultado);
     let regular = /(https?:\/\/)(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()!@:%_\+.~#?&\/\/=]*)/g;
     // arrayLink = [...resultado.matchAll(regular)];
     let arrayLink = resultado.match(regular);
 
-    console.log('lo que resulta del array', arrayLink);
+    // console.log('lo que resulta del array', arrayLink);
     return arrayLink;
   }).catch((err) => console.log("err", err))
 }
@@ -65,7 +64,7 @@ function verifyLinks(link) {
         Code: res.statusCode,
         status: res.statusCode <= 399,
       };
-      console.log(`statusCode: ${res.statusCode}`)
+      // console.log(`statusCode: ${res.statusCode}`)
       resolve(nuevaData); 
     })
 
