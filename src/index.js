@@ -21,3 +21,7 @@ if (args.some((x) => x === '--validate')) {
     path = args[2];
   }
   mdLink(path, options);
+
+  module.exports = {
+    mdLink
+  }
