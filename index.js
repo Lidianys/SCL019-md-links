@@ -26,6 +26,6 @@ if (args.some((x) => x === '--validate')) {
     console.log(err);
   });
 
-  module.exports = {
-    mdLink
-  };
+  // module.exports = {
+  //   mdLink
+  // };
