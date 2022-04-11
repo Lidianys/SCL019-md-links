@@ -6,7 +6,7 @@
     "node": ">=14.x"
   },
   "description": "Librería para verificar links validos e invalidos en documentos md",
-  "main": "src/index.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -26,9 +26,7 @@
   "keywords": [],
   "dependencies": {
     "colors": "^1.4.0",
-  
-    "ejs": "^3.1.6",
-    
+    "ejs": "^3.1.6"
   },
   "devDependencies": {
     "jest": "^27.5.1"
