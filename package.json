@@ -1,7 +1,7 @@
 {
   "name": "md-links-lidianys",
   "email": "lidianysrodriguez96@gmail.com",
-  "version": "0.1.2",
+  "version": "1.0.3",
   "engines": {
     "node": ">=14.x"
   },
