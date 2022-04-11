@@ -21,7 +21,7 @@ if (args.some((x) => x === '--validate')) {
     path = args[2];
   }
   mdLink(path, options).then(() =>{
-    console.log('------------------');
+    
   }).catch((err)=>{
     console.log(err);
   });
