@@ -1,7 +1,7 @@
 {
   "name": "md-links-lidianys",
   "email": "lidianysrodriguez96@gmail.com",
-  "version": "0.1.2",
+  "version": "1.0.4",
   "engines": {
     "node": ">=14.x"
   },
@@ -17,13 +17,17 @@
     "type": "git",
     "url": "git+https://github.com/Lidianys/SCL019-md-links.git"
   },
+  
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Lidianys/SCL019-md-links/issues"
   },
   "homepage": "https://github.com/Lidianys/SCL019-md-links#readme",
-  "keywords": [],
+  "keywords": [ "md-Links",
+    "Markdown",
+    "links"
+  ],
   "dependencies": {
     "colors": "^1.4.0",
     "ejs": "^3.1.6"
