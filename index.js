@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const {mdLink } = require ('./mdLinks.js');
 var args = process.argv;
 
