@@ -6,7 +6,7 @@
     "node": ">=14.x"
   },
   "description": "Librería para verificar links validos e invalidos en documentos md",
-  "main": "index.js",
+  "main": "./index.js",
   "directories": {
     "test": "test"
   },
