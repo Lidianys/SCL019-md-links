@@ -1,12 +1,12 @@
 {
   "name": "md-links-lidianys",
   "email": "lidianysrodriguez96@gmail.com",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "engines": {
     "node": ">=14.x"
   },
   "description": "Librería para verificar links validos e invalidos en documentos md",
-  "main": "./index.js",
+  "main": "./mdLinks.js",
   "bin": {
     "mdLink": "./index.js"
   },
