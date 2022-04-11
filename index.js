@@ -1,4 +1,4 @@
-const process = require('process');
+#!/usr/bin/env node
 const {mdLink } = require ('./mdLinks.js');
 var args = process.argv;
 
@@ -21,11 +21,11 @@ if (args.some((x) => x === '--validate')) {
     path = args[2];
   }
   mdLink(path, options).then(() =>{
-    console.log('------------------');
+    
   }).catch((err)=>{
     console.log(err);
   });
 
-  module.exports = {
-    mdLink
-  };
+  // module.exports = {
+  //   mdLink
+  // };

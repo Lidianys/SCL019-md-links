@@ -1,36 +1,41 @@
 {
   "name": "md-links-lidianys",
   "email": "lidianysrodriguez96@gmail.com",
-  "version": "1.0.4",
+  "version": "1.1.8",
   "engines": {
     "node": ">=14.x"
   },
   "description": "Librería para verificar links validos e invalidos en documentos md",
-  "main": "index.js",
+  "main": "./mdLinks.js",
+  "bin": {
+    "mdLink": "./index.js"
+  },
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "jest --coverage --verbose"
+    "test": "jest --coverage --verbose",
+    "dev": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Lidianys/SCL019-md-links.git"
   },
-  
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Lidianys/SCL019-md-links/issues"
   },
   "homepage": "https://github.com/Lidianys/SCL019-md-links#readme",
-  "keywords": [ "md-Links",
+  "keywords": [
+    "md-Links",
     "Markdown",
     "links"
   ],
   "dependencies": {
     "colors": "^1.4.0",
-    "ejs": "^3.1.6"
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "jest": "^27.5.1"

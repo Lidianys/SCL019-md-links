@@ -29,13 +29,13 @@ El diagrama de flujo de la librería es este:
 ### npm i md-links-lidianys
 
 ## 3.2 Sintaxis
-> **md-links <*Ruta*> [*Opciones*]**
+> **mdlink <*Ruta*> [*Opciones*]**
 
 ** *Ruta* **: 
 Ruta absoluta o relativa del archivo a revisar links. 
 
 ** *Opciones* **:
-- **-sin-opcion** 
+- **-sin-opción** 
 Si no se coloca ninguna opción se mostrará si el archivo tiene extension md o no. 
 ![noOpcion](/img/ruta.png) 
 

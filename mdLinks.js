@@ -45,7 +45,7 @@ const mdLink = function(path, options = {}){
       arrayObject.push(status);
     })
       .catch((err) => {
-        console.log('La ruta  no existe');
+        console.log('La ruta  no existe'.bgRed);
         console.log(err);
       }));
     return Promise.all(promiseArr);
@@ -79,7 +79,7 @@ const mdLink = function(path, options = {}){
     } else {
         //cuando ponen --stats 
       if (options.stats) {
-        console.log('link encontrados:'.green , arrayObject.length);
+        console.log('link encontrados:'.yellow , arrayObject.length);
         arrayObject.forEach((e) => {
           if (e.status) {
             countValid += 1;
