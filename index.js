@@ -1,4 +1,3 @@
-// const process = require('process');
 const {mdLink } = require ('./mdLinks.js');
 var args = process.argv;
 
