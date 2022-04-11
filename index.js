@@ -20,8 +20,12 @@ if (args.some((x) => x === '--validate')) {
   } else {
     path = args[2];
   }
-  mdLink(path, options);
+  mdLink(path, options).then(() =>{
+    console.log('------------------');
+  }).catch((err)=>{
+    console.log(err);
+  });
 
   module.exports = {
     mdLink
-  }
+  };

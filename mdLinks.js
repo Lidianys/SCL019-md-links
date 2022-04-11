@@ -9,11 +9,14 @@ const mdLink = function(path, options = {}){
         if (!app.pathAbsolute(path)) {
          console.log('la ruta es relativa, por lo que debo transformarla a absoluta');
          path = app.converToAbsolute(path);
-         console.log('Ahora la ruta es absoluta', path);                
+         console.log('Ahora la ruta es absoluta', path); 
+         console.log("ruta si no es absoluta", path);               
          }
          return path;         
   }).then((path) => {
       if (app.isFile(path) ) {
+        console.log("ruta si es absoluta", path);
+
         if (app.pathExtension(path)) {
             console.log('contiene un docuemnto .md'.bgGreen);
           

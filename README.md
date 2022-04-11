@@ -5,23 +5,21 @@
 * [1. Características de la librería](#1-características-de-la-librería-📋)
 * [2.  Diagrama de flujo](#2-Diagrama-de-flujo)
 * [3. Modo de uso](#3Modo-de-uso-📘)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Entregables](#6-entregables)
-* [7. Hacker edition](#7-hacker-edition)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
-* [10. Achicando el problema](#10-achicando-el-problema)
+* [4.Autora](#4-autor-👩💻)
 
 ***
 
 ## 1.  Características de la librería  📋
-##md-links-Lidianys## es una librería para poder determinar links válidos e inválidos y estadística de estos, en un archivo de extensión md, a traves de las opciones ##--validate ##, ##--stats ##o ambas.
+##md-links-Lidianys## es una librería para poder determinar links válidos e inválidos y estadística de estos, en un archivo de extensión md, a traves de las opciones:
+ > --validate , --stats o ambas. 
+
+ **Tegnologias** | JavaScript, Node.js, NPM, File System, Path, Process, Git, GitHub, Jest, ESLint |
+ --- | --- |
 
 
 ## 2. Diagrama de flujo
 El diagrama de flujo de la librería es este:
-![diagrama](img/diagramaDeFlujo.png) 
+![diagrama](/img/diagramaDeFlujo.png) 
 
 
 ## 3. Modo de uso 📘
@@ -37,9 +35,22 @@ El diagrama de flujo de la librería es este:
 Ruta absoluta o relativa del archivo a revisar links. 
 
 ** *Opciones* **:
+- **-sin-opcion** 
+Si no se coloca ninguna opción se mostrará si el archivo tiene extension md o no. 
+![noOpcion](/img/ruta.png) 
 
 -  **-validate**: 
+Si se coloca --validate se mostraran los links válidos en color verde y los links inválidos en color rojo.
+![validate](/img/validate.png)
 
 - **-stats**:
+Si se coloca --stats se mostrara cantidad de links en total, cantidad de links válidos en verde y cantidad de liks inválidos en rojo 
+![stats](/img/stats.png)
 
+- **-validate-stats**
+Si se colocan ambas opciones --validate --stats se mostrara toda la informacion: links válidos en verde, links inválidos en rojo y la estadística.
+![validate-stats](/img/validatestats.png)
 
+## 3. Autora 👩💻 
+
+Lidianys Rodríguez [( Lidianys )](hhttps://github.com/Lidianys)
