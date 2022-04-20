@@ -8,8 +8,6 @@ const { resolve } = require('dns');
 const { urlencoded } = require('express');
 const  url  = require('url');
 
-let array = [];
-
 //para verificar si tiene extension .md
 const pathExtension = (resp) => path.extname(resp) === '.md';
 
